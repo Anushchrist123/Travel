@@ -22,7 +22,7 @@ import { cn } from "@/lib/utils";
 const DrawerWithDialog = ({ shouldOpenForCreatePlan = false }) => {
   const user = useQuery(api.users.currentUser);
   const boughtCredits = user?.credits ?? 0;
-  const freeCredits = user?.freeCredits ?? 1;
+  const freeCredits = user?.freeCredits ?? 2;
   const totalCredits = freeCredits + boughtCredits;
 
   const [open, setOpen] = useState(false);

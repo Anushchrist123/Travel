@@ -5,6 +5,11 @@ const nextConfig = {
     remotePatterns: [
       {
         protocol: "https",
+        hostname: "polished-kangaroo-697.convex.cloud",
+        port: "",
+      },
+      {
+        protocol: "https",
         hostname: "quixotic-impala-265.convex.cloud",
         port: "",
       },

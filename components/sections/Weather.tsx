@@ -25,7 +25,6 @@ const Weather = ({placeName}: {placeName: string | undefined}) => {
   const getWeather = useAction(api.weather.getCurrentWeather);
   const {setPlanState} = usePlanContext();
   const [weatherData, setWeatherData] = useState<CurrentWeatherResponse | undefined>(undefined);
-
   useEffect(() => {
     if (!placeName) return;
     getWeather({placeName: placeName})

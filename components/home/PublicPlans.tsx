@@ -7,7 +7,7 @@ import React from "react";
 
 export default async function PublicPlans() {
   const token = await getAuthToken();
-  console.log(token);
+  console.log("This is token: publicplan::", token);
 
   const plans = await fetchQuery(
     api.plan.getPublicPlans,
